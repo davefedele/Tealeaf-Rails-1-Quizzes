@@ -47,7 +47,7 @@ the model associations and foreign key be?
 <pre><code>class Project << ActiveRecord::Base
   has_many  :issues
 end
-</pre></code>
+</code></pre>
 
 <pre><code>
 class Issue << ActiveRecord::Base
@@ -81,15 +81,13 @@ For Animal I expect just id:integer name:string created_at:datetime
 updated_at:datetime
 </code></pre>
 
-<code><pre>Zoo.first.animals.first.type
-</code></pre>
+<code><pre>Zoo.first.animals.first.type</code></pre>
 
-<code><pre>zoo = Zoo.create(name: 'San Diego Zoo')
+<pre><code>zoo = Zoo.create(name: 'San Diego Zoo')
   jumpster = Animal.create(type: 'jumpster')
   jumpster.zoo = zoo
   jumpster.save
-  zoo.save
-</code></pre>
+  zoo.save</code></pre>
 
 10. What is mass assignment? What's the non-mass assignment way of setting 
 values?
