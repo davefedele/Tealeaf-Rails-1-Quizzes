@@ -64,9 +64,11 @@ The foreign key will be: project_id
       has_many :animals
 end</code></pre>
 
+<pre><code>
     - What do you expect the other model to be and what does database schema look like?
     - What are the methods that are now available to a zoo to call related to animals?
     - How do I create an animal called "jumpster" in a zoo called "San Diego Zoo"?
+</code></pre>
 
 <pre><code>class Animal < ActiveRecord::Base
     belongs_to  :zoo
