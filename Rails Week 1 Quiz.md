@@ -46,14 +46,13 @@ the model associations and foreign key be?
 
 <pre><code>class Project << ActiveRecord::Base
   has_many  :issues
-end
-</code></pre>
+end</code></pre>
 
 <pre><code>
 class Issue << ActiveRecord::Base
   belongs_to  :project
 end
-</pre></code>
+</code></pre>
 
 <pre><code>
 The foreign key will be: project_id
