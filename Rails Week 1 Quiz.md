@@ -72,7 +72,7 @@ end</code></pre>
 
 <pre><code>class Animal < ActiveRecord::Base
     belongs_to  :zoo
-  end</pre></code>
+  end</code></pre>
 
 <pre><code>
 I expect the schema for zoo is id:integer type:string zoo_id:integer 
