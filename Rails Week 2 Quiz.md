@@ -12,7 +12,7 @@
     <td>posts_path</td><td>GET</td><td>/posts/</td><td>posts#index</td>
   </tr>
   <tr>
-    <td></td><td>POST</td><td>/posts</td>td>posts#create</td>
+    <td></td><td>POST</td><td>/posts</td><td>posts#create</td>
   </tr>
   <tr>
     <td>new_post_path</td><td>GET</td><td>/posts/new</td>td>posts#new</td>
