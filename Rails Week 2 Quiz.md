@@ -6,31 +6,31 @@
 
 <table>
   <tr>
-    <th>name</th><th>verb/method</th><th>url</th>
+    <th>name</th><th>verb/method</th><th>url</th><th>Controller#Action</th>
   </tr>
   <tr>
-    <td>posts</td><td>GET</td><td>Awesome</td>
+    <td>posts_path</td><td>GET</td><td>/posts/</td><td>posts#index</td>
   </tr>
   <tr>
-    <td>posts</td><td>POST</td><td>Awesome</td>
+    <td></td><td>POST</td><td>/posts</td>td>posts#create</td>
   </tr>
   <tr>
-    <td>posts</td><td>GET</td><td>Awesome</td>
+    <td>new_post_path</td><td>GET</td><td>/posts/new</td>td>posts#new</td>
   </tr>
   <tr>
-    <td>posts</td><td>GET</td><td>Awesome</td>
+    <td>edit_post_path</td><td>GET</td><td>/posts/id/edit</td>td>posts#edit</td>
   </tr>
   <tr>
-    <td>posts</td><td>GET</td><td>Awesome</td>
+    <td>posts_path</td><td>GET</td><td>/posts/id</td>td>posts#show</td>
   </tr>
   <tr>
-    <td>posts</td><td>PATCH</td><td>Awesome</td>
+    <td></td><td>PATCH</td><td>/posts/id</td>td>posts#update</td>
   </tr>
   <tr>
-    <td>posts</td><td>PUT</td><td>Awesome</td>
+    <td></td><td>PUT</td><td>/posts/id</td>td>posts#update</td>
   </tr>
   <tr>
-    <td>posts</td><td>DELETE</td><td>Awesome</td>
+    <td></td><td>DELETE</td><td>/posts/id</td>td>posts#destroy</td>
   </tr>
 </table>
 
