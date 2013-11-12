@@ -15,22 +15,22 @@
     <td></td><td>POST</td><td>/posts</td><td>posts#create</td>
   </tr>
   <tr>
-    <td>new_post_path</td><td>GET</td><td>/posts/new</td>td>posts#new</td>
+    <td>new_post_path</td><td>GET</td><td>/posts/new</td><td>posts#new</td>
   </tr>
   <tr>
-    <td>edit_post_path</td><td>GET</td><td>/posts/id/edit</td>td>posts#edit</td>
+    <td>edit_post_path</td><td>GET</td><td>/posts/id/edit</td><td>posts#edit</td>
   </tr>
   <tr>
-    <td>posts_path</td><td>GET</td><td>/posts/id</td>td>posts#show</td>
+    <td>posts_path</td><td>GET</td><td>/posts/id</td><td>posts#show</td>
   </tr>
   <tr>
-    <td></td><td>PATCH</td><td>/posts/id</td>td>posts#update</td>
+    <td></td><td>PATCH</td><td>/posts/id</td><td>posts#update</td>
   </tr>
   <tr>
-    <td></td><td>PUT</td><td>/posts/id</td>td>posts#update</td>
+    <td></td><td>PUT</td><td>/posts/id</td><td>posts#update</td>
   </tr>
   <tr>
-    <td></td><td>DELETE</td><td>/posts/id</td>td>posts#destroy</td>
+    <td></td><td>DELETE</td><td>/posts/id</td><td>posts#destroy</td>
   </tr>
 </table>
 
