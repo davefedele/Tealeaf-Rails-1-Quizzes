@@ -1,5 +1,6 @@
 # Week 2 Quiz
 1. Name all the 7 (or 8) routes exposed by the `resources` keyword in the `routes.rb` file. 
+Also name the 4 named routes, and how the request is routed to the controller/action.
 
 'resources' routes
 -------------
@@ -9,7 +10,7 @@
     <th>name</th><th>verb/method</th><th>url</th><th>Controller#Action</th>
   </tr>
   <tr>
-    <td>posts_path</td><td>GET</td><td>/posts/</td><td>posts#index</td>
+    <td>posts_path</td><td>GET</td><td>/posts</td><td>posts#index</td>
   </tr>
   <tr>
     <td></td><td>POST</td><td>/posts</td><td>posts#create</td>
@@ -33,10 +34,6 @@
     <td></td><td>DELETE</td><td>/posts/id</td><td>posts#destroy</td>
   </tr>
 </table>
-
-Also name the 4 named routes, and how the request is routed to the controller/action.
-
-<pre><code></code></pre>
 
 2. What is REST and how does it relate to the `resources` routes?
 
