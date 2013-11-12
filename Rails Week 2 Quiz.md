@@ -21,7 +21,7 @@
     <td>edit_post_path</td><td>GET</td><td>/posts/id/edit</td><td>posts#edit</td>
   </tr>
   <tr>
-    <td>posts_path</td><td>GET</td><td>/posts/id</td><td>posts#show</td>
+    <td>post_path</td><td>GET</td><td>/posts/id</td><td>posts#show</td>
   </tr>
   <tr>
     <td></td><td>PATCH</td><td>/posts/id</td><td>posts#update</td>
