@@ -65,10 +65,12 @@ class Vote < ActiveRecord::Base
   validates_uniqueness_of :creator, scope: :voteable
 end
 
+```ruby
 class Post < ActiveRecord::Base
   belongs_to  :creator, foreign_key: 'user_id', class_name: 'User'
   has_many    :votes, as: :voteable
 end
+```
 
 class User < ActiveRecord::Base
   has_many  :posts
