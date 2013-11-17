@@ -4,6 +4,7 @@
 Rendering is displaying the current controller#action's view template. If we want
  instance variables they must be declared in the controller#action.
 Redirecting is routing the user to another url.
+
 Instance variables are lost when redirecting, but are kept when rendering a view template.
 
 2. If I need to display a message on the view template, and I'm redirecting, what's the easiest way to accomplish this?
