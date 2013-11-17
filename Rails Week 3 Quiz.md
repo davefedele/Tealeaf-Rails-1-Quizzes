@@ -58,23 +58,22 @@ Answer:
 
 9. How do we set up polymorphic associations at the model layer? Give example for the polymorphic model (eg, Vote) as well as an example parent model (the model on the 1 side, eg, Post).
 
-<pre><code>
 class Vote < ActiveRecord::Base
   belongs_to  :creator, class_name: 'User', foreign_key: 'user_id'
   belongs_to  :voteable, polymorphic: true
 
   validates_uniqueness_of :creator, scope: :voteable
-end</code></pre>
+end
 
-<pre><code>class Post < ActiveRecord::Base
+class Post < ActiveRecord::Base
   belongs_to  :creator, foreign_key: 'user_id', class_name: 'User'
   has_many    :votes, as: :voteable
-end</code/></pre>
+end
 
-<pre><code>class User < ActiveRecord::Base
+class User < ActiveRecord::Base
   has_many  :posts
   has_many  :votes
-end</code></pre>
+end
 
 10. What is an ERD diagram, and why do we need it?
 
