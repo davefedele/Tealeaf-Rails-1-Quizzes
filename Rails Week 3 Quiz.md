@@ -58,12 +58,14 @@ Answer:
 
 9. How do we set up polymorphic associations at the model layer? Give example for the polymorphic model (eg, Vote) as well as an example parent model (the model on the 1 side, eg, Post).
 
+```ruby
 class Vote < ActiveRecord::Base
   belongs_to  :creator, class_name: 'User', foreign_key: 'user_id'
   belongs_to  :voteable, polymorphic: true
 
   validates_uniqueness_of :creator, scope: :voteable
 end
+```
 
 ```ruby
 class Post < ActiveRecord::Base
@@ -72,10 +74,12 @@ class Post < ActiveRecord::Base
 end
 ```
 
+```ruby
 class User < ActiveRecord::Base
   has_many  :posts
   has_many  :votes
 end
+```
 
 10. What is an ERD diagram, and why do we need it?
 
